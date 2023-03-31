@@ -1,6 +1,6 @@
 ---
-/* 
-  This layout is used in 
+/*
+  This layout is used in
   - pages/index.astro
   - pages/blog.astro
   - pages/projects.astro
@@ -9,7 +9,7 @@
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 
-import GoogleFont from "./GoogleFont.astro";
+import Fonts from "./Fonts.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
@@ -26,14 +26,12 @@ import Footer from "../components/Footer.astro";
     <meta name="generator" content="Blogster" />
     <Favicon />
     <slot name="meta" />
-    <GoogleFont />
+    <Fonts />
     <ThemeScript />
     <FontAwesome />
   </head>
 
-  <body
-    class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8"
-  >
+  <body class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8">
     <Header />
     <main id="main">
       <slot name="main" />

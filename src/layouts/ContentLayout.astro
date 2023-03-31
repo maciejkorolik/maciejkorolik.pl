@@ -1,5 +1,5 @@
 ---
-/* 
+/*
   This layout is used in pages that render markdoc content
   - pages/blog/[slug].astro
 */
@@ -7,7 +7,7 @@
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 
-import GoogleFont from "./GoogleFont.astro";
+import Fonts from "./Fonts.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
@@ -36,14 +36,12 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     <meta name="generator" content="Blogster" />
     <Favicon />
     <slot name="meta" />
-    <GoogleFont />
+    <Fonts />
     <ThemeScript />
     <FontAwesome />
   </head>
 
-  <body
-    class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8"
-  >
+  <body class="min-h-screen max-w-3xl mx-auto px-6 sm:px-8">
     <Header />
     <main id="main">
       <section class="blog-post prose max-w-none prose-sleek">
