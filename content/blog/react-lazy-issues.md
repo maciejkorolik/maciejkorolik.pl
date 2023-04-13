@@ -104,3 +104,7 @@ After implementing the custom retry mechanism, we observed a significant improve
 This custom retry mechanism demonstrates how a simple yet effective solution can help tackle the challenges of working with dynamically loaded modules in React. By handling errors gracefully and retrying the import process when necessary, we can ensure a more resilient and robust application.
 
 In summary, using React.lazy() to load modules dynamically can provide significant performance benefits, but it's essential to handle errors effectively to avoid app crashes. By implementing a custom retry mechanism, we can enhance our app's stability and provide a better user experience. Give it a try in your project!
+
+## Bonus: npm package
+
+If you want to try the function described in this article, you can use the npm package I published, [react-retry-lazy](https://www.npmjs.com/package/react-retry-lazy). Simply install it and start using it! Any feedback is much appreciated.
