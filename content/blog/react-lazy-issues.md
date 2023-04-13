@@ -6,7 +6,7 @@ description: Discover how implementing a custom retry mechanism for React.lazy()
 date: 2023-04-12
 ---
 
-As developers, our goal is to create efficient and performant web applications. One way to achieve this is by loading modules on demand, which helps reduce the initial loading time and improve the user experience. React.lazy() helps in this regard, allowing us to load components dynamically as they are needed. However, it can introduce some challenges. In this post, we'll share our experience with handling issues related to dynamically loaded modules and how implementing a custom retry mechanism helped reduce app crashes by 92%.
+As developers, our goal is to create efficient and performant web applications. One way to achieve this is by loading modules on demand, which helps reduce the initial loading time and improve the user experience. React.lazy() helps in this regard, allowing us to load components dynamically as they are needed. However, it can introduce some challenges. In this post, I'll share my experience with handling issues related to dynamically loaded modules and how implementing a custom retry mechanism helped reduce app crashes by 92%.
 
 ## The Power of React.lazy()
 
@@ -29,7 +29,7 @@ The idea behind a custom retry mechanism is to create a wrapper function that ha
 3. Retry the import process a specified number of times, with a delay between each attempt.
 4. Perform a full-page reload if all retries fail, and store a flag in sessionStorage to prevent infinite reloading.
 
-Here's the code for our custom retry mechanism:
+Here's the code for my custom retry mechanism:
 
 ```jsx
 // utils/retryLazy.js
